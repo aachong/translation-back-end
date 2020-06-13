@@ -1,0 +1,44 @@
+POST http://localhost:8080/api/vip/add
+Content-Type: application/json
+
+{
+  "endTime": "2020-04-28 20:20",
+  "status": 1,
+  "cost": 30,
+  "userInformation": {
+    "id": 1
+  }
+
+}
+
+###续费
+POST http://localhost:8080/api/vip/add
+Content-Type: application/json
+
+{
+  "id": 2,
+  "endTime": "2019-03-28 20:20",
+  "status": 1,
+  "cost": 30,
+  "userInformation": {
+    "id": 1
+  }
+}
+
+###判断这个用户是不是vip
+POST http://localhost:8080/api/vip/is
+Content-Type: application/json
+
+{
+  "id": 2
+}
+
+###
+POST http://localhost:8080/api/vip/get
+Content-Type: application/json
+
+{
+  "id": 2
+}
+
+###

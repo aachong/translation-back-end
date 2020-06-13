@@ -1,0 +1,16 @@
+POST http://localhost:8080/api/flow/user
+Content-Type: application/json
+
+{
+  "id": 1
+}
+
+###
+POST http://localhost:8080/api/flow/translator
+Content-Type: application/json
+
+{
+  "id": 1
+}
+
+###

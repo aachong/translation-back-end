@@ -1,0 +1,29 @@
+POST http://localhost:8080/api/evaluation/add
+Content-Type: application/json
+
+{
+  "rankSatisfaction": 3,
+  "rankSpeed": 3,
+  "content": "这是个好司机",
+  "order": {
+    "id": 1
+  }
+}
+
+###user
+POST http://localhost:8080/api/evaluation/ulist
+Content-Type: application/json
+
+{
+  "id": 1
+}
+
+###translator
+POST http://localhost:8080/api/evaluation/tlist
+Content-Type: application/json
+
+{
+  "id": 1
+}
+
+###

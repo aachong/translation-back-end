@@ -1,0 +1,68 @@
+POST http://localhost:8080/api/hc/add/history
+Content-Type: application/json
+
+{
+  "query": "good",
+  "translation": "好",
+  "info": "英语 -> 中文",
+  "userInformation": {
+    "id": 1
+  }
+}
+
+###
+POST http://localhost:8080/api/hc/add/collection
+Content-Type: application/json
+
+{
+  "query": "good",
+  "translation": "好",
+  "info": "英语 -> 中文",
+  "userInformation": {
+    "id": 1
+  }
+}
+
+###collectionid
+POST http://localhost:8080/api/hc/del/collection
+Content-Type: application/json
+
+{
+"id": 1
+}
+
+###userid
+POST http://localhost:8080/api/hc/del/history
+Content-Type: application/json
+
+{
+  "id": 1
+}
+
+###id 为userid
+POST http://localhost:8080/api/hc/del/allcollection
+Content-Type: application/json
+
+{
+  "id": 1
+}
+
+###user
+POST http://localhost:8080/api/hc/getuser/history
+Content-Type: application/json
+
+{
+  "id": 2
+}
+
+###
+POST http://localhost:8080/api/hc/getuser/collection
+Content-Type: application/json
+
+{
+  "id": 1
+
+}
+
+###
+

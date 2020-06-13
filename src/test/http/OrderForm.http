@@ -1,0 +1,70 @@
+POST http://localhost:8080/api/order/add
+Content-Type: application/json
+
+{
+  "id": 3,
+  "fromLanguage": "英语",
+  "toLanguage": "中文",
+  "demand": "诗歌",
+  "demandContent": "你要做的好点",
+  "numberWord": 20,
+  "cost": 30,
+  "query": "i am good boy",
+  "userInformation": {
+    "id": 1
+  }
+}
+
+###order
+POST http://localhost:8080/api/order/modify
+Content-Type: application/json
+
+{
+  "id": 5,
+  "translator": {
+    "id": 1
+  }
+}
+
+###order
+POST http://localhost:8080/api/order/complete
+Content-Type: application/json
+
+{
+  "id": 3,
+  "translation": "我是一个好男孩"
+}
+
+###order
+POST http://localhost:8080/api/order/get
+Content-Type: application/json
+
+{
+  "id": 2
+}
+
+###
+POST http://localhost:8080/api/order/user
+Content-Type: application/json
+
+{
+  "id": 1
+}
+
+###
+POST http://localhost:8080/api/order/ing
+Content-Type: application/json
+
+{
+  "id": 1
+}
+
+###
+POST http://localhost:8080/api/order/translator
+Content-Type: application/json
+
+{
+  "id": 1
+}
+
+###

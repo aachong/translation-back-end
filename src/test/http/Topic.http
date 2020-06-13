@@ -1,0 +1,70 @@
+POST http://localhost:8080/api/topic/id
+Content-Type: application/json
+
+{
+  "id": 1
+}
+
+
+####
+POST http://localhost:8080/api/topic/add
+Content-Type: application/json
+
+{
+  "title": "我是标题",
+  "content": "2017年3月13日 - CSS各种对齐代码，左对齐、右对齐、中间对齐、底部对齐、两端对齐等，代码简单/*CSS ... css实现一行中显示左对齐、居中、右对齐，一行数字或字母不换行 ... 前言：不同font-size的字体会出现上下偏差，这是一个蛮令人头疼的问题。",
+  "userInformation" : {
+    "id": 1
+  }
+}
+
+###del
+POST http://localhost:8080/api/topic/del
+Content-Type: application/json
+
+{
+  "id": 2
+}
+
+###listtopic
+GET http://localhost:8080/api/topic/all
+
+###addcontent
+POST http://localhost:8080/api/topic/addcontent
+Content-Type: application/json
+
+{
+  "content": "我是内容",
+  "userInformation" : {
+    "id": 1
+  },
+  "topic": {
+    "id": 7
+  }
+}
+
+###
+POST http://localhost:8080/api/topic/delcontent
+Content-Type: application/json
+
+{
+  "id":2
+}
+
+###all
+POST http://localhost:8080/api/topic/allcontent
+Content-Type: application/json
+
+{
+  "id":1
+}
+
+###
+GET http://localhost:8080/api/topic/find/标
+
+###
+GET http://localhost:8080/api/topic/findw/d
+
+###
+
+

@@ -1,0 +1,51 @@
+POST http://localhost:8080/api/translator/in
+Content-Type: application/json
+
+{
+  "name": "drcdrc",
+  "password": "drc123456"
+}
+
+###sign up
+POST http://localhost:8080/api/translator/add
+Content-Type: application/json
+
+{
+  "name": "drcdrc",
+  "password": "drc123456",
+  "phone" : "156034249792142",
+  "email" : "12434@qq.com"
+}
+
+###update
+POST http://localhost:8080/api/translator/save
+Content-Type: application/json
+
+{
+  "id" : 1,
+  "name": "drcdrc",
+  "password": "drc123456",
+  "phone" : "15603429792",
+  "email": "123123552@qq.com"
+}
+
+###
+POST http://localhost:8080/api/translator/money
+Content-Type: application/json
+
+{
+  "id" : 1,
+  "money": 20
+
+}
+
+###
+POST http://localhost:8080/api/translator/get
+Content-Type: application/json
+
+{
+  "id" : 1
+
+}
+
+###
